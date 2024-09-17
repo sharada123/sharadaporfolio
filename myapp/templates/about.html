@@ -1,0 +1,28 @@
+
+{% load static %}
+{% block 'main' %}
+<div class="container" id="about">
+    <div class="row mt-5 mb-3">
+        <h2 class="text-center"><Strong>About Me</Strong></h2>
+        <div class="col-md-7 mt-2">
+            <p class="about-para">Hi I'm Sharada Gadadhe As a Full Stack Developer , I specialize in both the Frond-end and Back-end components of web applications. I have experience with a variety of programming languages, frameworks, and tools, allowing me to design and implement user-friendly interfaces and robust server-side features.
+
+                My skills include HTML, CSS, JavaScript for front-end development, and Python, Django for back-end development. I also have experience working with databases such as MySQL as well as knowledge of version control systems like Git.</p>
+                <H3> Skills:</H3>
+                <ul class="footer-links">
+                    <li>HTML</li>
+                    <Li>CSS</Li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                    <li>DJANGO</li>
+                    <li>BOOTSTRAP</li>
+                    <LI>MYSQL</LI>
+                    
+                </ul>
+        </div>
+        <div class="col-md-5 mt-2">
+            <img src="{% static 'assets/images/my.jpg' %}" alt="profile picture" class="profile-img"/>
+        </div>
+    </div>
+</div>
+{% endblock 'main' %}

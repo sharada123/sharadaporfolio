@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<div class="container">
+    <div class="row mt-3 mb-1">
+        <div class="col-md-6 my-5">
+            <p><span>Hello, I'm</span><h3>Sharada Gadadhe</h3></p>
+            <p><span class="sub-pink">Web Designer | </span><span class="sub-blue">Web Developer | </span><span class="sub-purple">Full Stack Web Developer</span></p>
+            <button type="button" class="btn btn-purple" onclick="window.open('tel:8080898558');">Hire Me</button>
+            <a href="{% static 'assets/images/SharadaGadadhe_Resume.pdf' %}" class="btn btn-purple">Get Resume</a>
+            
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'assets/images/fullstack.png' %}" alt="full stack image" class="img-size"/>
+        </div>
+    </div>
+</div>
+{% include 'about.html'%}
+{% include 'service.html' %}
+<!--Project section-->
+<div class="container" id="project">
+    <div class="row">
+        <h2 class="text-center"><Strong> Projects</Strong></h2>
+        <div class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr.No.</th>
+                    <th scope="col">Project Name</th>
+                    <th scope="col">Type Of Project</th>
+                    <th scope="col">Source Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for x in project %}
+                  <tr class="table-danger">
+                    <th>{{forloop.counter}}</th>
+                    <td>{{x.title}} </td>
+                    <td>{{x.cat}}</td>
+                    <td><a href="{{x.srclink}}"> {{x.srclink}}</a></td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div><!--Project section end-->
+
+{% endblock 'main' %}
