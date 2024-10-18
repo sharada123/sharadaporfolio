@@ -1,49 +1,51 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block 'main' %}
-<div class="container">
-    <div class="row mt-3 mb-1">
-        <div class="col-md-6 my-5">
-            <p><span>Hello, I'm</span><h3>Sharada Gadadhe</h3></p>
+<div class="container-fluid">
+  
+    <div class="row  mb-1">
+        <div class="col-md-12 ">
+          <img src="{% static 'assets/images/image4.jpg' %}" alt="full stack image" class="img-size" width="100%"/>
+            <div class="namesection">
+              <p><h4 class="fw-bold">Hello, I'm</h4><h2 class="fw-bold">Sharada Gadadhe</h2></p>
             <p><span class="sub-pink">Web Designer | </span><span class="sub-blue">Web Developer | </span><span class="sub-purple">Full Stack Web Developer</span></p>
             <button type="button" class="btn btn-purple" onclick="window.open('tel:8080898558');">Hire Me</button>
             <a href="{% static 'assets/images/SharadaGadadhe_Resume.pdf' %}" class="btn btn-purple">Get Resume</a>
+            </div>
             
         </div>
-        <div class="col-md-6">
-            <img src="{% static 'assets/images/fullstack.png' %}" alt="full stack image" class="img-size"/>
-        </div>
+       
     </div>
 </div>
+
 {% include 'about.html'%}
 {% include 'service.html' %}
 <!--Project section-->
 <div class="container" id="project">
-    <div class="row">
-        <h2 class="text-center"><Strong> Projects</Strong></h2>
-        <div class="col">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Sr.No.</th>
-                    <th scope="col">Project Name</th>
-                    <th scope="col">Type Of Project</th>
-                    <th scope="col">Source Link</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    {% for x in project %}
-                  <tr class="table-danger">
-                    <th>{{forloop.counter}}</th>
-                    <td>{{x.title}} </td>
-                    <td>{{x.cat}}</td>
-                    <td><a href="{{x.srclink}}"> {{x.srclink}}</a></td>
-                  </tr>
-                  {% endfor %}
-                </tbody>
-              </table>
+    
+    <h1 class="text-center footer-links"><strong>All Projects</strong></h1>
+    {% for x in project %}
+    <div class="row mt-3 border rounded">
+        <div class="col-md-4 mt-3 mb-3">
+            <img src="{{ x.img.url }}" alt="project image" width="200px" height="200px" class="rounded">
+        </div>
+        <div class="col-md-8 mt-3 mb-3">
+            {% if x.cat == "front end" %}
+            <p>Web Design</p>
+            {% elif x.cat == "back end" %}
+            <p>Wed Developement</p>
+            {% else %}
+            <p>Web Developement</p>
+            {% endif %}
+            <h5 class="fw-bold">Project Title:&nbsp;{{ x.title }}</h5>
+            <p>Description:&nbsp;{{ x.desc }}</p>
+            <p>Technology Used:&nbsp;{{x.tech}}</p>
+            <p>Source Link:&nbsp;<a href="{{ x.srclink }}">{{ x.srclink }}</a></p>
         </div>
     </div>
+    {% endfor %}
+    
 </div><!--Project section end-->
-
+{% include 'resume.html' %}
+<p><a href="https://wa.me/8080898558" target="_blank" class="wa-icon"><i class="fa-brands fa-whatsapp fa-beat fa-2xl" style="color: #2eea31;"></i></a></p>
 {% endblock 'main' %}

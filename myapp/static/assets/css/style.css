@@ -1,3 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    background-color:#D8DAD7;
+    font-weight: bold;
+}
+.namesection{
+    margin-left: 10px;
+    position: absolute;
+    top: 250px;
+    
+}
+h1{
+    text-decoration: underline;
+    
+}
+.about-ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+p{
+    text-align: justify;
+}
 .footer-links{
     list-style: none;
     color: rgb(180, 141, 171);
@@ -32,7 +58,8 @@ color: rgb(117, 117, 194);
 color: rgb(179, 126, 179);
 }
 .img-size{
-    height: 60vh;
+    height: 80vh;
+   
 }
 .icon-bg-fill{
     background-color: rgb(182, 138, 182);
@@ -50,4 +77,19 @@ color: rgb(179, 126, 179);
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+.wa-icon{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    position: fixed;
+    right:0;
+    bottom: 0;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+
 }

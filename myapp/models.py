@@ -8,6 +8,7 @@ class Project(models.Model):
     img=models.ImageField(upload_to="image",verbose_name="image")
     srclink=models.CharField(max_length=200,verbose_name="Source code link")
     cat=models.CharField(max_length=200,choices=cat,verbose_name="Type of project")
+    tech=models.TextField(verbose_name="Technologies used",default="Python")
 
 class Contact(models.Model):
     fname=models.CharField(max_length=200)
