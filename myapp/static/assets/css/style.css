@@ -8,6 +8,7 @@ body{
     font-weight: bold;
   
 }
+
 .namesection{
     margin-left: 10px;
     position: absolute;
@@ -149,7 +150,7 @@ transform: rotate(0deg);
     border-top: 10px solid #FFAF99;
 }
 #pr-html{
-    animation: html 2s ease-in-out  normal;
+    animation: html 2s ease-in-out infinite normal;
 }
 @keyframes html {
     from{
@@ -160,7 +161,7 @@ transform: rotate(0deg);
     }
 }
 #pr-css{
-    animation: css 2s ease-in-out  normal;
+    animation: css 2s ease-in-out infinite normal;
 }
 @keyframes css {
     from{
@@ -171,7 +172,7 @@ transform: rotate(0deg);
     }
 }
 #pr-js{
-    animation: js 2s ease-in-out  normal;
+    animation: js 2s ease-in-out infinite normal;
 }
 @keyframes js {
     from{
@@ -182,7 +183,7 @@ transform: rotate(0deg);
     }
 }
 #pr-python{
-    animation: python 2s ease-in-out  normal;
+    animation: python 2s ease-in-out infinite normal;
 }
 @keyframes python {
     from{
@@ -194,7 +195,7 @@ transform: rotate(0deg);
 }
 
 #pr-django{
-    animation: django 2s ease-in-out  normal;
+    animation: django 2s ease-in-out infinite  normal;
 }
 @keyframes django {
     from{
@@ -205,7 +206,7 @@ transform: rotate(0deg);
     }
 }
 #pr-sql{
-    animation: sql 2s ease-in-out  normal;
+    animation: sql 2s ease-in-out infinite normal;
 }
 @keyframes sql {
     from{
@@ -216,7 +217,7 @@ transform: rotate(0deg);
     }
 }
 #pr-bootstrap{
-    animation: bootstrap 2s ease-in-out  normal;
+    animation: bootstrap 2s ease-in-out infinite normal;
 }
 @keyframes bootstrap {
     from{
