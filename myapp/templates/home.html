@@ -19,6 +19,7 @@
 </div>
 
 {% include 'about.html'%}
+{% include 'skillanimate.html' %}
 {% include 'service.html' %}
 <!--Project section-->
 <div class="container" id="project">
@@ -31,11 +32,11 @@
         </div>
         <div class="col-md-8 mt-3 mb-3">
             {% if x.cat == "front end" %}
-            <p>Web Design</p>
+            <p class="text-danger">Web Design</p>
             {% elif x.cat == "back end" %}
-            <p>Wed Developement</p>
+            <p class="text-success">Wed Developement</p>
             {% else %}
-            <p>Web Developement</p>
+            <p class="text-success">Web Developement</p>
             {% endif %}
             <h5 class="fw-bold">Project Title:&nbsp;{{ x.title }}</h5>
             <p>Description:&nbsp;{{ x.desc }}</p>

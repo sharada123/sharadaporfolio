@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
     background-color:#D8DAD7;
     font-weight: bold;
+  
 }
 .namesection{
     margin-left: 10px;
@@ -24,6 +25,7 @@ h1{
 p{
     text-align: justify;
 }
+
 .footer-links{
     list-style: none;
     color: rgb(180, 141, 171);
@@ -43,6 +45,17 @@ p{
     background-color: purple;
     color: white;
     border-radius: 20px;
+    animation: blink 2s ease-in-out  0s infinite normal ;
+}
+@keyframes blink{
+    from{
+        background-color: purple;
+        
+    }
+    to{
+        background-color: #ec5439;
+        
+    }
 }
 .btn-purple:hover{
     background-color: black;
@@ -92,4 +105,124 @@ color: rgb(179, 126, 179);
 .nav-link:hover{
     text-decoration: underline;
 
+}
+.main-div{
+    width: 50px;
+    height: 30px;
+    color: #FF4133;
+
+}
+
+.sub-div{
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ position: relative;
+ top:-60px;
+ left: -25px;
+ 
+ animation: spinanimate 2s ease-in-out 0s infinite normal;
+}
+
+@keyframes spinanimate{
+    from{
+transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#spin1{
+    border: 10px solid #FF4133;
+    border-top: 10px solid #FFA099;
+}
+#spin2{
+    border: 10px solid #7BFF47 ;
+    border-top: 10px solid #B0FF92;
+}
+#spin3{
+    border: 10px solid #9C33FF;
+    border-top: 10px solid #CE99FF;
+}
+#spin4{
+    border: 10px solid #FF8360;
+    border-top: 10px solid #FFAF99;
+}
+#pr-html{
+    animation: html 2s ease-in-out  normal;
+}
+@keyframes html {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+#pr-css{
+    animation: css 2s ease-in-out  normal;
+}
+@keyframes css {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+#pr-js{
+    animation: js 2s ease-in-out  normal;
+}
+@keyframes js {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+#pr-python{
+    animation: python 2s ease-in-out  normal;
+}
+@keyframes python {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 75%;
+    }
+}
+
+#pr-django{
+    animation: django 2s ease-in-out  normal;
+}
+@keyframes django {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+#pr-sql{
+    animation: sql 2s ease-in-out  normal;
+}
+@keyframes sql {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+#pr-bootstrap{
+    animation: bootstrap 2s ease-in-out  normal;
+}
+@keyframes bootstrap {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
 }
