@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: "Poppins", sans-serif
 }
 body{
     background-color:#D8DAD7;
@@ -10,10 +11,23 @@ body{
 }
 
 .namesection{
-    margin-left: 10px;
+    margin-left: 43vw;
     position: absolute;
-    top: 250px;
+    top: 200px;
     
+}
+#oneprofile{
+    width: 8vw;
+    height: 15vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px pink;
+}
+.namesection h2{
+    color: rgb(201, 22, 156);
+    margin-left: -50px;
+}
+.namesection #designation{
+    margin-left: -120px;
 }
 h1{
     text-decoration: underline;
