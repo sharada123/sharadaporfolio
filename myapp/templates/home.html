@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block 'main' %}
-<div class="container-fluid">
+<div class="container-fluid content">
   
     <div class="row  mb-1">
         <div class="col-md-12 ">
@@ -25,7 +25,7 @@
 <!--Project section-->
 <div class="container" id="project">
     
-    <h1 class="text-center"><strong>All Projects</strong></h1>
+    <h1 class="text-center text-white"><strong>All Projects</strong></h1>
     {% for x in project %}
     <div class="row mt-3 border rounded">
         <div class="col-md-4 mt-3 mb-3">
@@ -39,10 +39,10 @@
             {% else %}
             <p class="text-success">Web Developement</p>
             {% endif %}
-            <h5 class="fw-bold">Project Title:&nbsp;{{ x.title }}</h5>
-            <p>Description:&nbsp;{{ x.desc }}</p>
-            <p>Technology Used:&nbsp;{{x.tech}}</p>
-            <p>Source Link:&nbsp;<a href="{{ x.srclink }}">{{ x.srclink }}</a></p>
+            <h5 class="fw-bold text-white">Project Title:&nbsp;{{ x.title }}</h5>
+            <p class="text-white">Description:&nbsp;{{ x.desc }}</p>
+            <p class="text-white">Technology Used:&nbsp;{{x.tech}}</p>
+            <p class="text-white">Source Link:&nbsp;<a href="{{ x.srclink }}">{{ x.srclink }}</a></p>
         </div>
     </div>
     {% endfor %}
